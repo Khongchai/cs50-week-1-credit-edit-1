@@ -8,12 +8,9 @@ int main ()
     long ten = 1;
     printf("Enter credit card number     ");
     scanf("%ld", &creditnumber);
-    long creditnumber2 = creditnumber;  // copy value to the despensable creditnumber2
-
-    while (creditnumber2 != 0) //creditnumber2 being destroyed.
+    while (count != strlen(creditnumber)) 
         
     {
-        creditnumber2 /=10;
         count++;
         ten *=10; //get the divisor for the Array.
     }
